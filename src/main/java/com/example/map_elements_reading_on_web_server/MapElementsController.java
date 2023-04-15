@@ -66,7 +66,10 @@ public class MapElementsController {
     @PutMapping("/putElement")
     public String putElement(@RequestBody Element element) {
 
+        //hm.put(element.getId(), element.getElement());
         hm.put(element.getId(), element.getElement());
+        System.out.println("Test of out");
+        System.out.println(element.toString());
         return "Element with id " + element.getId() + " is placed";
 
     }

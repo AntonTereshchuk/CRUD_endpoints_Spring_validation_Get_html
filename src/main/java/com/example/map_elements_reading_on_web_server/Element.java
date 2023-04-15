@@ -1,7 +1,9 @@
 package com.example.map_elements_reading_on_web_server;
 
 import jakarta.validation.constraints.Size;
+import lombok.Data;
 
+@Data
 public class Element {
 
     private int id;
